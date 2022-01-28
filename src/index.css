@@ -1,13 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.movie {
+  position: relative;
+  width: 300px;
+  margin: 1.5rem;
+  background-color: #219f94;
+  border-radius: 20px;
+  box-shadow: 3px -3px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
+
+.movie img {
+  max-width: 100%;
+}
+
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-info {
+  display: flex;
+  padding: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie-info h2 {
+  margin: 0;
+}
+
+.movie-over {
+  background-color: #313552;
+  position: absolute;
+  
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color:darkgrey;
+  padding: 1rem;
+  transform:translateX(102%);
+  transition: transform 0.3s ease-in-out;
+		
+}
+
+.movie:hover .movie-over{
+	transform: translateX(0%)
+
+}
+
+
+
+
+.movie-over h2{
+	color: yellow;
+}
+
+
+
+
+
+
+
