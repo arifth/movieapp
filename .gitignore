@@ -24,4 +24,4 @@ yarn-error.log*
 
 #api.js
 #
-#/src/Api.js
+/src/Api.js
