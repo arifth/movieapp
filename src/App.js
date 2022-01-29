@@ -19,9 +19,13 @@ const App = () => {
 
   return (
     <div className="movie-container">
+      <header>
+        <h3>Movie Database and search</h3>
+        <input className="search" type="text" placeholder="Cari disini" />
+      </header>
       {movies.map((movie) => (
-        <Movie key={movie.id} {...movie}/>
-      ))} 
+        <Movie key={movie.id} {...movie} />
+      ))}
     </div>
   );
 };
